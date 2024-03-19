@@ -1,0 +1,14 @@
+//= link_tree ../images
+//= link_directory ../stylesheets .css
+//= link_tree ../../javascript .js
+//= link_tree ../../../vendor/javascript .js
+//= link main.js
+//= link aos.js
+//= link bootstrap.js
+//= link glightbox.js
+//= link isotope.pkgd.js
+//= link validate.js
+//= link purecounter_vanilla.js
+//= link swiper-bundle.min.js
+//= link typed.umd.js
+//= link noframework.waypoints.js
