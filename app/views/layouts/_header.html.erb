@@ -4,7 +4,7 @@
 
       <div class="profile">
         <%= image_tag('personal_photo_profile.jpg', alt: 'Profile image', class: 'img-fluid rounded-circle') %>
-        <h1 class="text-light"><%= link_to "Panagiotis Zazos", root_path %></h1>
+        <h1 class="text-light" style="font-family: 'Pirata One', cursive;"><%= link_to "Panagiotis Zazos", root_path %></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
           <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
@@ -16,12 +16,10 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="<%= root_path %>" class="nav-link scrollto active"><i class="fa fa-home"></i> <span>Home</span></a></li>
-          <li><a href="<%= about_path %>" class="nav-link scrollto"><i class="fa fa-user"></i> <span>About</span></a></li>
-          <li><a href="<%= visualization_path %>" class="nav-link scrollto"><i class="fa fa-server"></i> <span>Services</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="fa fa-book"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="fa fa-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="fa fa-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="<%= root_path %>" class="nav-link scrollto active" style="font-family: 'Pirata One', cursive;"><i class="fa fa-home"></i> <span>Home</span></a></li>
+          <li><a href="<%= about_path %>" class="nav-link scrollto" style="font-family: 'Pirata One', cursive;"><i class="fa fa-user"></i> <span>About</span></a></li>
+          <li><a href="<%= visualization_path %>" class="nav-link scrollto" style="font-family: 'Pirata One', cursive;"><i class="fa fa-server"></i> <span>Services</span></a></li>
+          <li><a href="<%= contact_path %>" class="nav-link scrollto" style="font-family: 'Pirata One', cursive;"><i class="fa fa-address-book"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
