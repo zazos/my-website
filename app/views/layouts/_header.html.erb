@@ -6,20 +6,19 @@
         <%= image_tag('personal_photo_profile.jpg', alt: 'Profile image', class: 'img-fluid rounded-circle') %>
         <h1 class="text-light" style="font-family: 'Pirata One', cursive;"><%= link_to "Panagiotis Zazos", root_path %></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="fa-brands fa-skype"></i></a>
-          <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/zazos" class="github"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.facebook.com/pzazos/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/probablyzazos/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/panagiotis-zazos-ba1a02188/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="<%= root_path %>" class="nav-link scrollto active" style="font-family: 'Pirata One', cursive;"><i class="fa fa-home"></i> <span>Home</span></a></li>
-          <li><a href="<%= about_path %>" class="nav-link scrollto" style="font-family: 'Pirata One', cursive;"><i class="fa fa-user"></i> <span>About</span></a></li>
-          <li><a href="<%= visualization_path %>" class="nav-link scrollto" style="font-family: 'Pirata One', cursive;"><i class="fa fa-server"></i> <span>Services</span></a></li>
-          <li><a href="<%= contact_path %>" class="nav-link scrollto" style="font-family: 'Pirata One', cursive;"><i class="fa fa-address-book"></i> <span>Contact</span></a></li>
+          <li><a href="<%= root_path %>" class="nav-link scrollto <%= 'active' if current_page?(root_path) %>" style="font-family: 'Pirata One', cursive;"><i class="fa fa-home"></i> <span>Home</span></a></li>
+          <li><a href="<%= about_path %>" class="nav-link scrollto <%= 'active' if current_page?(about_path) %>" style="font-family: 'Pirata One', cursive;"><i class="fa fa-user"></i> <span>About</span></a></li>
+          <li><a href="<%= visualization_path %>" class="nav-link scrollto <%= 'active' if current_page?(visualization_path) %>" style="font-family: 'Pirata One', cursive;"><i class="fa fa-server"></i> <span>Visualization</span></a></li>
+          <li><a href="<%= contact_path %>" class="nav-link scrollto <%= 'active' if current_page?(contact_path) %>" style="font-family: 'Pirata One', cursive;"><i class="fa fa-address-book"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
