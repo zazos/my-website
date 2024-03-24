@@ -3,8 +3,6 @@
  *= require_self
  */
 
-@import "bootstrap";
-
 @font-face {
     font-family: 'Pirata One';
     src: url('PirataOne-Regular.ttf') format('truetype');
