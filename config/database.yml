@@ -19,3 +19,4 @@ production:
   database: pzazos_website_production
   username: pzazos_website
   password: <%= ENV['PZAZOS_WEBSITE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
